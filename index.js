@@ -67,7 +67,7 @@ function game(){
 
 			constructWord.correctGuess();
 			if(correctGuess === false){
-				console.log("Incorrect! Guess again!")
+				console.log("Incorrect! Guess again!");
 				guessLeft--;			
 			}
 			else{
