@@ -67,14 +67,14 @@ function game(){
 
 			constructWord.correctGuess();
 			if(correctGuess === false){
-				console.log("Incorrect! Guess again!");
+				console.log("INCORRECT!!!");
 				guessLeft--;			
 			}
 			else{
-				console.log("Correct!!!"); 
+				console.log("CORRECT!!!"); 
 			}
-			console.log("Guessed Letters: " + characterGuessed.join(" ") + "\n");
-			console.log("Guesses Left: " + guessLeft + "\n");
+			console.log("\nGuessed Letters: " + characterGuessed.join(" "));
+			console.log("\nGuesses Left: " + guessLeft + "\n");
 
 
 			for(var i of constructWord.letterArray){
@@ -89,9 +89,9 @@ function game(){
 
 			if(gameEnd === true || guessLeft === 0){
 				if(guessLeft === 0){
-					console.log("\nYou Lost!!\n");
+					console.log("\nYou Lost!! Guess the next word!!\n");
 				}else {
-					console.log("\nYou Won!!\n");
+					console.log("\nYou Won!! Guess the next word!!\n");
 				}
 				gameStart();
 				return;
